@@ -1,9 +1,9 @@
 # Importing from packages
 from vehicles import Vehicle, SchoolBus
 from employees import Employee
-from schools.school_one import SchoolOne
-from schools.school_two import SchoolTwo
+from schools import SchoolOne, SchoolTwo
 from vectors import Vector
+from library import Book, Author
 
 def main():
     # --- Vehicles (Inheritance & Polymorphism) ---
@@ -71,6 +71,15 @@ def main():
 
     # --- Book & Author (Composition) ---
     print("\n---\n")
+
+    author = Author(f"Sev Torreon", "Filipino", "Loves Cian Lee very much.")
+    book = Book("I Like Cian Lee", "Romance Comedy", author)
+
+    print(book.get_info())
+
+    # --- End ---
+
+    print("\n---")
 
 if __name__ == "__main__":
     main()
