@@ -2,7 +2,7 @@ from .schools import Schools
 
 class SchoolOne(Schools):
     def __init__(self, students):
-        super().__init__("School One", students)
+        super().__init__("Ateneo", students)
 
     def get_grades(self):
         print(f"Grades for {self._name}:\n")

@@ -43,9 +43,9 @@ def main():
     ]
 
     students_two = [
-        {"name": "Dee Dee", "grades": [75, 83, 79], "gpa": 2.75},
-        {"name": "Marky", "grades": [85, 87, 81], "gpa": 3.00},
-        {"name": "Joey", "grades": [96, 61, 84], "gpa": 2.75}
+        {"name": "Dee Dee", "grades": [100, 98, 99], "gpa": 4.00},
+        {"name": "Marky", "grades": [96, 100, 100], "gpa": 4.00},
+        {"name": "Joey", "grades": [99, 98, 100], "gpa": 4.00}
     ]
 
     school1 = SchoolOne(students_one)
