@@ -2,7 +2,7 @@ from .vehicle import Vehicle
 
 class SchoolBus(Vehicle):
     def __init__(self, vehicleType, make, model, capacity):
-        super().__init__(vehicleType, make, model)
+        super().__init__(vehicleType, make, model) # Super() is SO COOL
         self._capacity = capacity
 
     def drive(self):
