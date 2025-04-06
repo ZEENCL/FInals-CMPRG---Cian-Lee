@@ -3,6 +3,7 @@ from vehicles import Vehicle, SchoolBus
 from employees import Employee
 from schools.school_one import SchoolOne
 from schools.school_two import SchoolTwo
+from vectors import Vector
 
 def main():
     # --- Vehicles (Inheritance & Polymorphism) ---
@@ -36,21 +37,40 @@ def main():
     print("\n---\n")
 
     students_one = [
-        {"name": "Ed", "grades": [49, 54, 63], "gpa": 1},
+        {"name": "Ed", "grades": [49, 54, 63], "gpa": 1.00},
         {"name": "Edd", "grades": [52, 69, 64], "gpa": 1.25},
-        {"name": "Eddy", "grades": [32, 76, 58], "gpa": 1}
+        {"name": "Eddy", "grades": [32, 76, 58], "gpa": 1.00}
     ]
 
     students_two = [
-        {"name": "Ed", "grades": [49, 54, 63], "gpa": 1},
-        {"name": "Edd", "grades": [52, 69, 64], "gpa": 1.25},
-        {"name": "Eddy", "grades": [32, 76, 58], "gpa": 1}
+        {"name": "Dee Dee", "grades": [75, 83, 79], "gpa": 2.75},
+        {"name": "Marky", "grades": [85, 87, 81], "gpa": 3.00},
+        {"name": "Joey", "grades": [96, 61, 84], "gpa": 2.75}
     ]
 
     school1 = SchoolOne(students_one)
     school1.get_grades()
 
-    
+    print()
+
+    school2 = SchoolTwo(students_two)
+    school2.get_grades()
+
+    # --- Vectors Adding (Dunder Method) ---
+    print("\n---\n")
+
+    vector1 = Vector(1, 2)
+    vector2 = Vector(3, 4)
+
+    result = vector1 + vector2
+
+    print("Vector 1:", vector1)
+    print("Vector 2:", vector2)
+    print()
+    print("Result of addition:", result)
+
+    # --- Book & Author (Composition) ---
+    print("\n---\n")
 
 if __name__ == "__main__":
     main()
